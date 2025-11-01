@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corporate Shuttle & Tour Experts Nationwide - Safe, Punctual, Professional shuttle services across the country.">
+    <meta name="keywords" content="corporate shuttle, tour services, nationwide transportation, professional chauffeurs">
+    <meta name="author" content="Pogiso Tours">
+    <meta name="theme-color" content="#000000">
+    <title>Corporate Shuttle & Tour Experts Nationwide | Pogiso Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%);
+        }
+        
+        .feature-card {
+            transition: all 300ms ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            transition: all 300ms ease;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            transition: all 300ms ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .accordion-button {
+            transition: all 300ms ease;
+        }
+        
+        .accordion-button.active {
+            background-color: #f3f4f6;
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 300ms ease;
+        }
+        
+        .accordion-content.active {
+            max-height: 500px;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1a1a1a 0%, #404040 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 300ms ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #1a1a1a;
+            transition: width 300ms ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .cta-button {
+            transition: all 300ms ease;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        
+        .cta-button:hover {
+            background-color: #404040;
+            transform: scale(1.05);
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Announcement Bar -->
+    <div class="bg-black text-white py-3 px-4 text-center text-sm md:text-base">
+        <p><i class="fas fa-truck mr-2"></i>Fast Nationwide Service - 24/7 Support Available</p>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-black rounded-lg flex items-center justify-center">
+                        <i class="fas fa-bus text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-black hidden sm:inline">Pogiso Tours</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 font-medium text-sm lg:text-base">Home</a>
+                    <a href="#features" class="nav-link text-gray-700 font-medium text-sm lg:text-base">Features</a>
+                    <a href="#benefits" class="nav-link text-gray-700 font-medium text-sm lg:text-base">Benefits</a>
+                    <a href="#about" class="nav-link text-gray-700 font-medium text-sm lg:text-base">About</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 font-medium text-sm lg:text-base">Testimonials</a>
+                    <a href="#faq" class="nav-link text-gray-700 font-medium text-sm lg:text-base">FAQ</a>
+                    <a href="#contact" class="nav-link text-gray-700 font-medium text-sm lg:text-base">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA & Mobile Menu Button -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://www.pogisostours.co.za/booking/" class="hidden md:inline-block cta-button px-6 py-2 rounded-lg font-semibold text-sm transition-all duration-300">
+                        Book Now
+                    </a>
+                    <button class="mobile-menu-button md:hidden text-gray-700 hover:text-black transition-colors duration-300">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu hidden md:hidden pb-4 border-t border-gray-200 mt-4">
+                <a href="#home" class="block py-3 px-4 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">Home</a>
+                <a href="#features" class="block py-3 px-4 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-3 px-4 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">Benefits</a>
+                <a href="#about" class="block py-3 px-4 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">About</a>
+                <a href="#testimonials" class="block py-3 px-4 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block py-3 px-4 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-3 px-4 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">Contact</a>
+                <a href="https://www.pogisostours.co.za/booking/" class="block py-3 px-4 mt-2 cta-button rounded-lg font-semibold text-center transition-all duration-300">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative w-full h-screen min-h-96 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Corporate Shuttle Service" class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                Corporate Shuttle & Tour Experts Nationwide
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed font-light">
+                Safe. Punctual. Professional. Corporate Shuttle Excellence
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.pogisostours.co.za/booking/" class="btn-primary cta-button px-8 py-4 rounded-lg font-bold text-lg inline-block transition-all duration-300">
+                    Book Your Shuttle Now
+                </a>
+                <a href="#features" class="px-8 py-4 rounded-lg font-bold text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 inline-block">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Why Choose Pogiso Tours?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Experience premium corporate transportation with our comprehensive fleet and dedicated service
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+                <!-- Feature 1: Luxury Fleet -->
+                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:border-gray-300">
+                    <div class="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-crown text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Luxury Fleet</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Our premium fleet features modern, well-maintained vehicles equipped with the latest amenities for maximum comfort and professionalism on every journey.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><i class="fas fa-check text-black mr-2"></i>Modern vehicles</li>
+                        <li><i class="fas fa-check text-black mr-2"></i>Premium interiors</li>
+                        <li><i class="fas fa-check text-black mr-2"></i>Latest technology</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: 24/7 Call Centre -->
+                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:border-gray-300">
+                    <div class="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">24/7 Call Centre</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Our dedicated support team is available round the clock to assist with bookings, changes, and any special requirements you may have.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><i class="fas fa-check text-black mr-2"></i>Always available</li>
+                        <li><i class="fas fa-check text-black mr-2"></i>Professional support</li>
+                        <li><i class="fas fa-check text-black mr-2"></i>Quick response</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Nationwide Service -->
+                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:border-gray-300">
+                    <div class="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-map text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Nationwide Service</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        With coverage across the entire country, we ensure reliable transportation wherever your corporate needs take you.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><i class="fas fa-check text-black mr-2"></i>Full coverage</li>
+                        <li><i class="fas fa-check text-black mr-2"></i>Reliable routes</li>
+                        <li><i class="fas fa-check text-black mr-2"></i>Local expertise</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    The Pogiso Tours Advantage
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Discover how our corporate shuttle services deliver exceptional value and reliability
+                </p>
+            </div>
+
+            <!-- Benefit 1: Cost-effective -->
+            <div class="mb-12 md:mb-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center bg-white rounded-xl overflow-hidden">
+                    <div class="order-2 md:order-1">
+                        <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Cost-effective Solutions" class="w-full h-full object-cover rounded-lg md:rounded-none">
+                    </div>
+                    <div class="order-1 md:order-2 px-6 md:px-8 lg:px-12 py-8 md:py-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Cost-Effective Solutions</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                            Maximize your transportation budget with our competitive pricing and transparent fee structure. We offer flexible packages tailored to your corporate needs, eliminating hidden costs and unnecessary expenses.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Competitive rates for all budgets</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Flexible payment options available</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">No hidden charges or surprise fees</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Volume discounts for regular bookings</span>
+                            </li>
+                        </ul>
+                        <a href="https://www.pogisostours.co.za/booking/" class="btn-primary cta-button px-6 py-3 rounded-lg font-bold inline-block transition-all duration-300">
+                            Get a Quote Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 2: Professional Chauffeurs -->
+            <div class="mb-12 md:mb-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="px-6 md:px-8 lg:px-12 py-8 md:py-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professional Chauffeurs</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                            Our experienced chauffeurs are thoroughly vetted, professionally trained, and committed to delivering exceptional service. Each driver undergoes rigorous background checks and regular training to ensure the highest standards of professionalism and safety.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Thoroughly vetted and trained drivers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Professional appearance and conduct</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Extensive knowledge of routes and areas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Discretion and confidentiality guaranteed</span>
+                            </li>
+                        </ul>
+                        <a href="https://www.pogisostours.co.za/booking/" class="btn-primary cta-button px-6 py-3 rounded-lg font-bold inline-block transition-all duration-300">
+                            Book a Professional Driver
+                        </a>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Professional Chauffeurs" class="w-full h-full object-cover rounded-lg md:rounded-none">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 3: Reliable Nationwide -->
+            <div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center bg-white rounded-xl overflow-hidden">
+                    <div class="order-2 md:order-1">
+                        <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Reliable Nationwide Service" class="w-full h-full object-cover rounded-lg md:rounded-none">
+                    </div>
+                    <div class="order-1 md:order-2 px-6 md:px-8 lg:px-12 py-8 md:py-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Reliable Nationwide Coverage</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                            With our extensive network spanning the entire country, we guarantee reliable service wherever your business takes you. Our proven track record ensures on-time performance and consistent quality across all regions.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Nationwide coverage and availability</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Proven on-time performance record</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Consistent service quality nationwide</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-black mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-700">Real-time tracking and updates</span>
+                            </li>
+                        </ul>
+                        <a href="https://www.pogisostours.co.za/booking/" class="btn-primary cta-button px-6 py-3 rounded-lg font-bold inline-block transition-all duration-300">
+                            Schedule Your Journey
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    About Pogiso Tours
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Decades of Excellence in Corporate Transportation
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80" alt="About Pogiso Tours" class="w-full h-auto rounded-xl shadow-lg">
+                </div>
+                <div>
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg mb-4">
+                            Founded over two decades ago, Pogiso Tours has grown from a small local shuttle service to one of the nation's most trusted corporate transportation providers. Starting with just a handful of vehicles, we built our reputation on reliability, professionalism, and an unwavering commitment to customer satisfaction. Today, our extensive fleet serves thousands of corporate clients nationwide, from Fortune 500 companies to innovative startups, all trusting us with their most important transportation needs.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission & Vision</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            At Pogiso Tours, our mission is to redefine corporate transportation by delivering safe, punctual, and professionally executed shuttle services that exceed expectations. We believe that every journey matters, and we're committed to making each one exceptional. Our vision is to become the nation's premier corporate shuttle provider by continuously innovating our services, investing in our people and fleet, and maintaining the highest standards of safety and professionalism. We're dedicated to building long-term partnerships with our clients through transparency, reliability, and a genuine commitment to their success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl font-bold text-black mb-2">20+</div>
+                    <p class="text-gray-600 font-semibold">Years of Excellence</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl font-bold text-black mb-2">500+</div>
+                    <p class="text-gray-600 font-semibold">Satisfied Corporate Clients</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl font-bold text-black mb-2">99.8%</div>
+                    <p class="text-gray-600 font-semibold">On-Time Performance Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    What Our Clients Say
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Trusted by leading companies across the nation
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-base">
+                        "Pogiso Tours has been instrumental in streamlining our executive transportation. Their punctuality is impeccable – we've never experienced a late pickup in three years of partnership. The professionalism of their chauffeurs and the condition of their vehicles consistently impress our clients."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Sarah Mitchell</p>
+                            <p class="text-sm text-gray-600">VP of Operations, TechCorp Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-base">
+                        "We switched to Pogiso Tours for our employee shuttle program and saved 35% on transportation costs while actually improving service quality. Their 24/7 call centre has been a lifesaver for our operations team, and the drivers are always courteous and professional."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">James Rodriguez</p>
+                            <p class="text-sm text-gray-600">Logistics Manager, Global Manufacturing Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-base">
+                        "For our nationwide conference tours, Pogiso Tours provided seamless coordination across multiple regions. Their attention to detail, from vehicle maintenance to driver professionalism, exceeded our expectations. Highly recommend them for any corporate transportation needs."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Amanda Chen</p>
+                            <p class="text-sm text-gray-600">Event Coordinator, Premier Financial Group</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                            <i class="fas fa-star star-rating text-sm"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-base">
+                        "Our executives travel frequently, and Pogiso Tours has become our go-to partner. The reliability, combined with their luxury fleet and professional service, makes every trip stress-free. We've been using them for two years and wouldn't consider switching."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Michael Torres</p>
+                            <p class="text-sm text-gray-600">Travel Director, Executive Consulting Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Find answers to common questions about our corporate shuttle services
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="accordion-button w-full px-6 py-4 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-300 flex items-center justify-between" onclick="toggleAccordion(this)">
+                        <span>How do I book a corporate shuttle with Pogiso Tours?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 py-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Booking with Pogiso Tours is simple and convenient. You can visit our website at www.pogisostours.co.za/booking/ to reserve your shuttle online, or call our 24/7 call centre at info@pogisostours.co.za for personalized assistance. We offer flexible booking options for one-time trips, recurring services, and long-term contracts. Our team will work with you to customize a solution that meets your specific corporate transportation needs and budget requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="accordion-button w-full px-6 py-4 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-300 flex items-center justify-between" onclick="toggleAccordion(this)">
+                        <span>What is your cancellation and modification policy?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 py-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            We understand that plans can change. Cancellations made 24 hours in advance receive a full refund with no penalties. Modifications to pickup times, locations, or vehicle types can be made up to 4 hours before your scheduled service at no additional charge. For cancellations within 24 hours, a 50% service fee applies. Emergency situations are handled on a case-by-case basis – we encourage you to contact our 24/7 call centre to discuss your specific circumstances.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="accordion-button w-full px-6 py-4 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-300 flex items-center justify-between" onclick="toggleAccordion(this)">
+                        <span>Do you offer discounts for regular or bulk bookings?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 py-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! We offer competitive volume discounts for corporate clients with regular transportation needs. Our pricing structure rewards loyalty and frequent usage. For monthly contracts, we provide 10-15% discounts, and for annual agreements, discounts can reach 20-25%. We also offer special rates for employee shuttle programs, executive transportation packages, and group tours. Contact our sales team for a customized quote tailored to your company's specific requirements and usage patterns.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="accordion-button w-full px-6 py-4 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-300 flex items-center justify-between" onclick="toggleAccordion(this)">
+                        <span>What safety measures and insurance coverage do you provide?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 py-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Safety is our top priority. All our vehicles undergo rigorous maintenance and safety inspections monthly. Our chauffeurs are thoroughly vetted, professionally trained, and required to maintain clean driving records. We carry comprehensive liability insurance covering all passengers and third-party claims. Our fleet is equipped with advanced safety features including GPS tracking, emergency communication systems, and real-time monitoring. We comply with all federal and state transportation regulations, and maintain detailed safety protocols for all operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&h=900&fit=crop&q=80" alt="Ready to Book" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/60"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
+                Ready to Experience Premium Corporate Transportation?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-100 mb-8 leading-relaxed">
+                Book your shuttle service today and discover why thousands of companies trust Pogiso Tours
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.pogisostours.co.za/booking/" class="btn-primary cta-button px-8 py-4 rounded-lg font-bold text-lg inline-block transition-all duration-300">
+                    Book Now
+                </a>
+                <a href="mailto:info@pogisostours.co.za" class="px-8 py-4 rounded-lg font-bold text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 inline-block">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Get In Touch
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Have questions? Our team is here to help
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Email -->
+                <div class="bg-white rounded-xl p-8 text-center shadow-md border border-gray-200">
+                    <div class="w-16 h-16 bg-black rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Email</h3>
+                    <a href="mailto:info@pogisostours.co.za" class="text-gray-600 hover:text-black transition-colors duration-300 font-semibold">
+                        info@pogisostours.co.za
+                    </a>
+                </div>
+
+                <!-- Phone -->
+                <div class="bg-white rounded-xl p-8 text-center shadow-md border border-gray-200">
+                    <div class="w-16 h-16 bg-black rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">24/7 Support</h3>
+                    <p class="text-gray-600 font-semibold">
+                        Call our centre anytime for immediate assistance
+                    </p>
+                </div>
+
+                <!-- Booking -->
+                <div class="bg-white rounded-xl p-8 text-center shadow-md border border-gray-200">
+                    <div class="w-16 h-16 bg-black rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Online Booking</h3>
+                    <a href="https://www.pogisostours.co.za/booking/" class="text-gray-600 hover:text-black transition-colors duration-300 font-semibold">
+                        Visit our booking portal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                            <i class="fas fa-bus text-black text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">Pogiso Tours</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Premium corporate shuttle and tour services trusted by leading companies nationwide.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Benefits</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.pogisostours.co.za/booking/" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Book Shuttle</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">FAQ</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400 text-sm">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:info@pogisostours.co.za" class="hover:text-white transition-colors duration-300">
+                                info@pogisostours.co.za
+                            </a>
+                        </li>
+                        <li class="text-gray-400 text-sm">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>24/7 Support Available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div class="text-gray-400 text-sm">
+                        <p class="mb-2"><strong>Fast Nationwide Service:</strong> 5 days delivery</p>
+                        <p><strong>Satisfaction Guarantee:</strong> 100% refund upon return</p>
+                    </div>
+                    <div class="flex space-x-6 md:justify-end">
+                        <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms of Service</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Blog</a>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">&copy; 2024 Pogiso Tours. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('active');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                const menu = document.querySelector('.mobile-menu');
+                menu.classList.add('hidden');
+                menu.classList.remove('active');
+            });
+        });
+
+        // Accordion Toggle
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Close all other accordions
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            document.querySelectorAll('.accordion-button i').forEach(i => {
+                if (i !== icon) {
+                    i.style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current accordion
+            content.classList.toggle('active');
+            
+            if (content.classList.contains('active')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .testimonial-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 600ms ease, transform 600ms ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
